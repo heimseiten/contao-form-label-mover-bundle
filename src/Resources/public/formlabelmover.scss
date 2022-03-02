@@ -1,9 +1,9 @@
-.ce_form:not(.dontmove) form:not(.dontmove),
-.mod_login:not(.dontmove) form,
-.mod_registration:not(.dontmove) form,
-.mod_personalData:not(.dontmove) form,
-.mod_changePassword:not(.dontmove)
- { 
+.ce_form.move_label form,
+.ce_form form.move_label,
+.mod_login.move_label form,
+.mod_registration.move_label form,
+.mod_personalData.move_label form,
+.mod_changePassword.move_label { 
     .widget.error { display: block !important; }
     .widget:not(.error) { position: relative; margin-top: 10px;
         label { position: absolute; 
