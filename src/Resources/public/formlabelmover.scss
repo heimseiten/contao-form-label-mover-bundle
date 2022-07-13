@@ -5,7 +5,7 @@
 .mod_personalData.move_label form,
 .mod_changePassword.move_label { 
     .widget.error { display: block !important; }
-    .widget:not(.error) { position: relative; margin-top: 10px;
+    .widget:not(.error):not(.widget-checkbox) { position: relative; margin-top: 10px;
         label { position: absolute; 
             top: 0; 
             left: 0; 
