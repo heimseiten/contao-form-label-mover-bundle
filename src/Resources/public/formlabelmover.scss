@@ -1,9 +1,6 @@
-.ce_form.move_label form,
-.ce_form form.move_label,
-.mod_login.move_label form,
-.mod_registration.move_label form,
-.mod_personalData.move_label form,
-.mod_changePassword.move_label { 
+form.move_labels,
+.move_labels form
+{ 
     .widget.error { display: block !important; }
     .widget:not(.error):not(.widget-checkbox) { position: relative; margin-top: 10px;
         label { position: absolute; 

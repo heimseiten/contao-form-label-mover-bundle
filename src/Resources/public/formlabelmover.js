@@ -1,5 +1,7 @@
 document.addEventListener('DOMContentLoaded', function(event) { 
+
   form_activate_label_on_input_focus()
+
   function form_activate_label_on_input_focus() {
     document.querySelectorAll('form input').forEach(e => { setEventListener(e) })
     document.querySelectorAll('form textarea').forEach(e => { setEventListener(e) })
@@ -11,11 +13,13 @@ document.addEventListener('DOMContentLoaded', function(event) {
       document.querySelectorAll('form textarea').forEach(e => { if (e.value != '') { e.parentElement.classList.add('active') } })
     }, 100)
   }
+
   function setEventListener(e) {
       e.addEventListener('change', toggleClassActive)
       e.addEventListener('focusin', toggleClassActive)
       e.addEventListener('focusout', toggleClassActive)
   }
+
   function toggleClassActive() {
     if (this.value.length == 0) {
       if (this === document.activeElement) {
@@ -27,4 +31,5 @@ document.addEventListener('DOMContentLoaded', function(event) {
       this.closest('.widget').classList.add('active')
     }
   }
+  
 })
