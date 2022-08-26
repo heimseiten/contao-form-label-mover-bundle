@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function(event) {
   form_activate_label_on_input_focus()
 
   function form_activate_label_on_input_focus() {
-    if ( document.querySelectorAll('form input') ) {
+    if ( document.querySelector('form input') ) {
       document.querySelectorAll('form input').forEach(e => { setEventListener(e) })
       document.querySelectorAll('form textarea').forEach(e => { setEventListener(e) })
     
