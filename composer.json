@@ -1,9 +1,10 @@
 {
     "name": "heimseiten/contao-form-label-mover-bundle",
-    "description": "Verschiebt die Titel von Eingabefeldern in das Feld und beim Bearbeiten nach oben. Falls dies bei einzelnen Formularen nicht gewünscht ist, einfach die Klasse dontmove in das Element oder Modul eintragen.",
+"description": "Verschiebt bei Formularen die Labels beim Bearbeiten nach oben, wenn im Formular oder im Modul die Klasse move_labels vergeben wurde.",
     "keywords": [
         "formular",
         "feld",
+        "label",
         "animation"
     ],
     "type": "contao-bundle",
