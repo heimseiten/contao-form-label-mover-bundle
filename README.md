@@ -1,2 +1,2 @@
 # Label Mover
-Verschiebt die Titel von Eingabefeldern in das Feld und beim Bearbeiten nach oben. Falls dies bei einzelnen Formularen nicht gewünscht ist, einfach die Klasse dontmove in das Element oder Modul eintragen.
+Verschiebt bei Formularen die Labels beim Bearbeiten nach oben, wenn im Formular oder im Modul die Klasse move_labels vergeben wird.
