@@ -1,23 +1,37 @@
 form.move_labels,
-.move_labels form
-{ 
-    .widget.error { display: block !important; }
-    .widget:not(.error):not(.widget-checkbox) { position: relative; margin-top: 10px;
-        label { position: absolute; 
-            top: 0; 
+.move_labels form { 
+    .widget-text, 
+    .widget-textarea,
+    .widget-password { 
+        position: relative; 
+        padding-top: 15px;
+        label { 
+            position: absolute; 
+            top: 15px;
             left: 0; 
-            padding: 3px 6px; 
+            padding: 6px; 
             transform-origin: left; 
             border: 1px solid transparent; 
-            line-height: 1.5;
-              transition-property: top, left, transform, width, background, border-radius, padding, line-height;
-              transition-duration: 0.25s;
-              transition-timing-function: ease-in-out;
+            line-height: 1.6;
+            transition-property: top, left, width, background, border-radius, padding, line-height, font-size;
+            transition-duration: 0.25s;
+            transition-timing-function: ease-in-out;
             &.select { display: none; }
         }
-        &.active label { top: -11px; left: 6px; transform: scale(0.7); width: auto; background: #fff; border-radius: 3px; padding: 0 2px; line-height: 1; }
-        input, textarea, select { 
-            width: 100%; border: 1px solid var(--border_color); border-radius: 0; padding: 3px 6px; box-shadow: none; outline: none; line-height: 1.5;
+        &.active label { 
+            top: 3px; 
+            left: 6px; 
+            font-size: 13px;
+            width: auto;
+            background: #fff; 
+            border-radius: 3px; 
+            padding: 0 2px; 
+            line-height: 1; 
+        }
+        input, textarea{ 
+            width: 100%;
+            padding: 6px; 
+            line-height: 1.6;
         }
     }
 }

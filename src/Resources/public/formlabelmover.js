@@ -3,15 +3,17 @@ document.addEventListener('DOMContentLoaded', function(event) {
   form_activate_label_on_input_focus()
 
   function form_activate_label_on_input_focus() {
-    document.querySelectorAll('form input').forEach(e => { setEventListener(e) })
-    document.querySelectorAll('form textarea').forEach(e => { setEventListener(e) })
+    if (document.querySelectorAll('form input') {
+      document.querySelectorAll('form input').forEach(e => { setEventListener(e) })
+      document.querySelectorAll('form textarea').forEach(e => { setEventListener(e) })
     
-    setTimeout(function () {
-      document.querySelectorAll(':-webkit-autofill').forEach(e => { e.parentElement.classList.add('active') })        
-      document.querySelectorAll('form input:not(.flatpickr-input)').forEach(e => { if (e.value != '') { e.parentElement.classList.add('active') } })
-      document.querySelectorAll('form input.flatpickr-input').forEach(e => { if (e.value != '') { e.parentElement.parentElement.classList.add('active') } })
-      document.querySelectorAll('form textarea').forEach(e => { if (e.value != '') { e.parentElement.classList.add('active') } })
-    }, 100)
+      setTimeout(function () {
+        document.querySelectorAll(':-webkit-autofill').forEach(e => { e.parentElement.classList.add('active') })        
+        document.querySelectorAll('form input:not(.flatpickr-input)').forEach(e => { if (e.value != '') { e.parentElement.classList.add('active') } })
+        document.querySelectorAll('form input.flatpickr-input').forEach(e => { if (e.value != '') { e.parentElement.parentElement.classList.add('active') } })
+        document.querySelectorAll('form textarea').forEach(e => { if (e.value != '') { e.parentElement.classList.add('active') } })
+      }, 100)
+    }
   }
 
   function setEventListener(e) {
@@ -31,5 +33,5 @@ document.addEventListener('DOMContentLoaded', function(event) {
       this.closest('.widget').classList.add('active')
     }
   }
-  
+
 })
