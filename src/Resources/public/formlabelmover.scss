@@ -3,11 +3,12 @@ form.move_labels,
     .widget-text, 
     .widget-textarea,
     .widget-password { 
+        --widget_padding_top: 10px;
         position: relative; 
-        padding-top: 15px;
+        padding-top: var(--widget_padding_top);
         label { 
             position: absolute; 
-            top: 15px;
+            top: var(--widget_padding_top);
             left: 0; 
             padding: 6px; 
             transform-origin: left; 
