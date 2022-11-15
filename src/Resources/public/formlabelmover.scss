@@ -2,7 +2,8 @@ form.move_labels,
 .move_labels form { 
     .widget-text, 
     .widget-textarea,
-    .widget-password { 
+    .widget-password,
+    .widget-captcha { 
         --widget_padding_top: 10px;
         position: relative; 
         padding-top: var(--widget_padding_top);
