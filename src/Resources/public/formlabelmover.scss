@@ -1,9 +1,8 @@
 form.move_labels,
 .move_labels form { 
     .widget { 
-        --form_gap: 10px;
         position: relative; 
-        padding-top: var(--form_gap);
+        padding-top: var(--form_gap, 10px);
         &:not(.widget-checkbox) {
             input, textarea, select { 
                 width: 100%;
@@ -19,7 +18,7 @@ form.move_labels,
     .widget-captcha { 
         label { 
             position: absolute; 
-            top: var(--form_gap);
+            top: var(--form_gap, 10px);
             left: 0; 
             padding: 6px; 
             transform-origin: left; 
