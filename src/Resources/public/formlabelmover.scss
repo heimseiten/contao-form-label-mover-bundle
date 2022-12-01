@@ -30,8 +30,8 @@ form.move_labels,
             &.select { display: none; }
         }
         &.active label { 
-            top: 3px; 
-            left: var(--form_input_padding, 6px); 
+            top: calc( var(--form_gap) - 13px ); 
+            left: 6px; 
             font-size: 13px;
             width: auto;
             background: #fff; 
