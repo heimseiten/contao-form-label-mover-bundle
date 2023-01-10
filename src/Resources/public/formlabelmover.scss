@@ -16,7 +16,8 @@ form.move_labels,
     .widget-textarea,
     .widget-password,
     .widget-captcha { 
-        label { 
+        label {
+            color: var(--font_color, #444);
             position: absolute; 
             top: var(--form_gap, 10px);
             left: 0; 
