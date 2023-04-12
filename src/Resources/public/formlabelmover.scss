@@ -6,7 +6,6 @@ form.move_labels,
         &:not(.widget-checkbox) {
             input, textarea, select { 
                 width: 100%;
-                height: 100%;
                 padding: var(--form_input_padding, 6px); 
                 line-height: 1.469;
             }
