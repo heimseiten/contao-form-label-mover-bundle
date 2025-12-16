@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', function(event) {
         document.querySelectorAll('form input:not(.flatpickr-input)').forEach(e => { if (e.value != '') { e.parentElement.classList.add('active') } })
         document.querySelectorAll('form input.flatpickr-input').forEach(e => { if (e.value != '') { e.parentElement.parentElement.classList.add('active') } })
         document.querySelectorAll('form textarea').forEach(e => { if (e.value != '') { e.parentElement.classList.add('active') } })
+        document.querySelectorAll('form input[type="date"]').forEach(e => { e.parentElement.classList.add('active') })
       }, 100)
     }
   }
