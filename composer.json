@@ -1,6 +1,6 @@
 {
     "name": "heimseiten/contao-form-label-mover-bundle",
-"description": "Verschiebt bei Formularen die Labels beim Bearbeiten nach oben, wenn im Formular oder im Modul die Klasse move_labels vergeben wurde.",
+    "description": "Verschiebt bei Formularen die Labels beim Bearbeiten nach oben, wenn im Formular oder im Modul die Klasse move_labels vergeben wurde.",
     "keywords": [
         "formular",
         "feld",
@@ -34,16 +34,7 @@
     "autoload": {
         "psr-4": {
             "Heimseiten\\ContaoFormLabelMoverBundle\\": "src/"
-        },
-        "classmap": [
-            "src/Resources/contao"
-        ],
-        "exclude-from-classmap": [
-            "src/Resources/contao/config",
-            "src/Resources/contao/dca",
-            "src/Resources/contao/languages",
-            "src/Resources/contao/templates"
-        ]
+        }
     },
     "extra": {
         "contao-manager-plugin": "Heimseiten\\ContaoFormLabelMoverBundle\\ContaoManager\\Plugin"
