@@ -22,7 +22,7 @@
         "source": "https://github.com/heimseiten/contao-form-label-mover-bundle"
     },
     "require": {
-        "contao/core-bundle": "^4.9 || ^5.0"
+        "contao/core-bundle": "^5.0"
     },
     "require-dev": {
         "contao/manager-plugin": "^2.3"
