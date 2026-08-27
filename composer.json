@@ -1,6 +1,6 @@
 {
     "name": "heimseiten/contao-form-label-mover-bundle",
-    "description": "Verschiebt bei Formularen die Labels beim Bearbeiten nach oben, wenn im Formular oder im Modul die Klasse move_labels vergeben wurde.",
+    "description": "Legt die Beschriftung eines Formularfeldes in das Feld selbst und lässt sie beim Ausfüllen an den oberen Rand des Feldes wandern. Aktiviert über die CSS-Klasse move_labels am Formular oder am Modul.",
     "keywords": [
         "formular",
         "feld",
